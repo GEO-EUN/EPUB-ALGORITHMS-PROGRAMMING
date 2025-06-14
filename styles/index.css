@@ -1,0 +1,25 @@
+.main-link {
+  color: #0076ff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.main-link:hover, .main-link:focus {
+  background: #e6f0ff;
+  outline: none;
+}
+
+.main-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem;
+  text-align: center;
+} 

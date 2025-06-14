@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="140" viewBox="0 0 240 140">
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#28a745" />
+    </marker>
+  </defs>
+  <!-- Condition diamond -->
+  <polygon points="120,35 160,75 120,115 80,75" fill="#e6fbe8" stroke="#28a745" stroke-width="2"/>
+  <text x="120" y="80" text-anchor="middle" font-size="13" fill="#28a745" font-weight="bold">조건</text>
+  <!-- Branch arrows (shortened to avoid overlap) -->
+  <path d="M160 75 L190 75" stroke="#28a745" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M80 75 L50 75" stroke="#28a745" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Branch boxes -->
+  <rect x="195" y="60" width="35" height="30" rx="5" fill="#e6fbe8" stroke="#28a745" stroke-width="2"/>
+  <rect x="10" y="60" width="35" height="30" rx="5" fill="#e6fbe8" stroke="#28a745" stroke-width="2"/>
+  <text x="212" y="80" text-anchor="middle" font-size="12" fill="#28a745" font-weight="bold">참</text>
+  <text x="27" y="80" text-anchor="middle" font-size="12" fill="#28a745" font-weight="bold">거짓</text>
+</svg> 

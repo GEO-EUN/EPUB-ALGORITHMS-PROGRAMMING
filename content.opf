@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier id="BookId">urn:uuid:12345678-1234-1234-1234-123456789012</dc:identifier>
+        <dc:title>알고리즘 기초 학습</dc:title>
+        <dc:creator>비상교육</dc:creator>
+        <dc:language>ko</dc:language>
+        <dc:rights>Copyright 2024</dc:rights>
+        <meta property="dcterms:modified">2024-06-09T12:00:00Z</meta>
+    </metadata>
+    <manifest>
+        <!-- CSS -->
+        <item id="style" href="OEBPS/css/style.css" media-type="text/css"/>
+        <item id="css-index" href="OEBPS/css/index.css" media-type="text/css"/>
+        <item id="css-qna" href="OEBPS/css/qna.css" media-type="text/css"/>
+        <item id="styles-selection" href="OEBPS/styles/selection.css" media-type="text/css"/>
+        <item id="styles-repetition" href="OEBPS/styles/repetition.css" media-type="text/css"/>
+        <!-- JavaScript -->
+        <item id="quiz-js" href="OEBPS/js/quiz.js" media-type="application/javascript"/>
+        <item id="visualization-js" href="OEBPS/js/visualization.js" media-type="application/javascript"/>
+        <item id="selection-js" href="OEBPS/js/selection.js" media-type="application/javascript"/>
+        <item id="sequential-js" href="OEBPS/js/sequential.js" media-type="application/javascript"/>
+        <item id="repetition-js" href="OEBPS/js/repetition.js" media-type="application/javascript"/>
+        <!-- Images -->
+        <item id="programming-basics" href="OEBPS/images/programming_basics.svg" media-type="image/svg+xml"/>
+        <item id="algorithm-design" href="OEBPS/images/algorithm_design.svg" media-type="image/svg+xml"/>
+        <item id="flowchart-rep" href="OEBPS/images/flowchart_rep.svg" media-type="image/svg+xml"/>
+        <item id="flowchart-seq" href="OEBPS/images/flowchart_seq.svg" media-type="image/svg+xml"/>
+        <item id="flowchart-sel" href="OEBPS/images/flowchart_sel.svg" media-type="image/svg+xml"/>
+        <item id="variables-control" href="OEBPS/images/variables_control.svg" media-type="image/svg+xml"/>
+        <item id="real-world-applications" href="OEBPS/images/real_world_applications.svg" media-type="image/svg+xml"/>
+        <item id="problem-solving" href="OEBPS/images/problem_solving.svg" media-type="image/svg+xml"/>
+        <item id="apple" href="OEBPS/images/apple.svg" media-type="image/svg+xml"/>
+        <item id="flow-rep" href="OEBPS/images/flow_rep.svg" media-type="image/svg+xml"/>
+        <item id="flow-sel" href="OEBPS/images/flow_sel.svg" media-type="image/svg+xml"/>
+        <item id="flow-seq" href="OEBPS/images/flow_seq.svg" media-type="image/svg+xml"/>
+        <!-- Audio -->
+        <item id="audio-book" href="OEBPS/audio/algobook.mp3" media-type="audio/mpeg"/>
+        <!-- XHTML Content -->
+        <item id="index" href="OEBPS/xhtml/index.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+        <item id="nav" href="OEBPS/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+        <item id="page1" href="OEBPS/xhtml/page1.xhtml" media-type="application/xhtml+xml"/>
+        <item id="page2" href="OEBPS/xhtml/page2.xhtml" media-type="application/xhtml+xml"/>
+        <item id="page3" href="OEBPS/xhtml/page3.xhtml" media-type="application/xhtml+xml"/>
+        <item id="page4" href="OEBPS/xhtml/page4.xhtml" media-type="application/xhtml+xml"/>
+        <item id="page5" href="OEBPS/xhtml/page5.xhtml" media-type="application/xhtml+xml"/>
+        <item id="sequential" href="OEBPS/xhtml/sequential.xhtml" media-type="application/xhtml+xml"/>
+        <item id="repetition" href="OEBPS/xhtml/repetition.xhtml" media-type="application/xhtml+xml"/>
+        <item id="selection" href="OEBPS/xhtml/selection.xhtml" media-type="application/xhtml+xml"/>
+        <item id="programing" href="OEBPS/xhtml/programing.xhtml" media-type="application/xhtml+xml"/>
+        <item id="qna" href="OEBPS/xhtml/qna.xhtml" media-type="application/xhtml+xml"/>
+        <item id="appendix" href="OEBPS/xhtml/appendix.xhtml" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="index"/>
+        <itemref idref="nav"/>
+        <itemref idref="page1"/>
+        <itemref idref="page2"/>
+        <itemref idref="page3"/>
+        <itemref idref="page4"/>
+        <itemref idref="page5"/>
+        <itemref idref="sequential"/>
+        <itemref idref="repetition"/>
+        <itemref idref="selection"/>
+        <itemref idref="programing"/>
+        <itemref idref="qna"/>
+        <itemref idref="appendix"/>
+    </spine>
+</package> 

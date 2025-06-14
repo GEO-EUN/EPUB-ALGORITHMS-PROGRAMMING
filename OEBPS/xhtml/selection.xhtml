@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>선택 구조</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../../styles/selection.css"/>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul class="main-menu">
+      <li class="dropdown">
+        <a href="page1.xhtml">학습 시작하기</a>
+        <ul class="dropdown-list">
+          <li><a href="index.xhtml">표지 돌아가기</a></li>
+          <li><a href="../nav.xhtml">목차 보기</a></li>
+          <li><a href="page1.xhtml">문제 해결의 첫걸음</a></li>
+          <li><a href="page2.xhtml">알고리즘 설계</a></li>
+          <li><a href="page3.xhtml">프로그래밍 기초</a></li>
+          <li><a href="page4.xhtml">변수와 제어 구조</a></li>
+          <li><a href="page5.xhtml">실생활 적용</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="sequential.xhtml">실습하기</a>
+        <ul class="dropdown-list">
+          <li><a href="sequential.xhtml">순차 구조</a></li>
+          <li><a href="repetition.xhtml">반복 구조</a></li>
+          <li><a href="selection.xhtml">선택 구조</a></li>
+          <li><a href="qna.xhtml">질문과 답변</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="programing.xhtml">Flip-Audio Book</a>
+        <ul class="dropdown-list">
+          <li><a href="programing.xhtml">프로그래밍 과정<br/>알아보기</a></li>
+          <li><a href="appendix.xhtml">부록 보기</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="section-title-center">
+    <h2 class="title-with-icon">
+      <img src="../images/flow_sel.svg" alt="선택 구조 아이콘" />
+      선택 구조
+    </h2>
+  </div>
+  <p>선택 구조는 주어진 조건에 따라 실행할 명령이 달라지는 제어 구조입니다. '만약 ~라면 ~하고, 아니면 ~한다'와 같은 형태로, 조건의 참/거짓에 따라 프로그램의 흐름이 다른 경로로 진행됩니다. 주로 if-else 문으로 구현됩니다.</p>
+  <div style="text-align:center; margin: 2rem 0;">
+    <img src="../images/flowchart_sel.svg" alt="선택 구조 플로우차트" style="max-width:240px;width:100%;height:auto;" />
+  </div>
+
+  <section class="input-section">
+    <h3>🎯 직접 입력해보기</h3>
+    <div class="input-tips">
+      <h5>💡 학습 팁</h5>
+      <ul>
+        <li>다양한 점수와 기준점을 설정하여 선택 구조를 이해해 보세요</li>
+        <li>경계값(기준점 근처)을 테스트해 보세요</li>
+        <li>기준점을 바꿔가며 결과 변화를 관찰해 보세요</li>
+        <li>알고리즘 실행 시뮬레이션에서 단계별로 확인해 보세요</li>  
+      </ul>
+    </div>
+
+    <div class="custom-input">
+      <div class="input-group">
+        <label for="custom-score">점수:</label>
+        <input type="number" id="custom-score" value="85" min="0" max="100" />
+        <label for="custom-threshold">기준점:</label>
+        <input type="number" id="custom-threshold" value="60" min="0" max="100" />
+        <button class="run-custom" id="sel-run-custom">🚀 실행하기</button>
+      </div>
+      <div id="sel-validation-error" class="validation-error"></div>
+    </div>
+
+    <div class="test-cases">
+      <h4>📋 미리 준비된 테스트 케이스</h4>
+      <div class="test-case" data-inputs="85,60">
+        <div class="test-case-info">일반적인 합격: 점수=85, 기준=60</div>
+        <div class="test-case-result">결과: 합격</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="45,60">
+        <div class="test-case-info">일반적인 불합격: 점수=45, 기준=60</div>
+        <div class="test-case-result">결과: 불합격</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="60,60">
+        <div class="test-case-info">경계값 테스트: 점수=60, 기준=60</div>
+        <div class="test-case-result">결과: 합격</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="59,60">
+        <div class="test-case-info">경계값 테스트: 점수=59, 기준=60</div>
+        <div class="test-case-result">결과: 불합격</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="95,90">
+        <div class="test-case-info">높은 기준: 점수=95, 기준=90</div>
+        <div class="test-case-result">결과: 합격</div>
+        <button>사용하기</button>
+      </div>
+    </div>
+
+    <div class="results-comparison">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h4>📊 실행 결과 비교</h4>
+        <button class="clear-results" id="sel-clear-results">결과 지우기</button>
+      </div>
+      <div id="sel-results"></div>
+    </div>
+  </section>
+
+  <section class="visualization">
+    <h3>알고리즘 실행 시뮬레이션</h3>
+    <div class="sim-controls">
+      <button id="sel-play" aria-label="실행">▶️ 실행</button>
+      <button id="sel-pause" aria-label="일시정지">⏸️ 일시정지</button>
+      <button id="sel-reset" aria-label="리셋">🔄 리셋</button>
+    </div>
+    
+    <div class="algorithm-steps">
+      <div class="step" data-step="0">
+        <span class="step-number">1</span>
+        <span class="step-text">시작</span>
+      </div>
+      <div class="step" data-step="1">
+        <span class="step-number">2</span>
+        <span class="step-text">점수 입력: <input type="number" id="input-score" value="75" min="0" max="100" /></span>
+      </div>
+      <div class="step" data-step="2">
+        <span class="step-number">3</span>
+        <span class="step-text">점수 >= 60 인가? <span id="condition-result">?</span></span>
+      </div>
+      <div class="step branch-true" data-step="3">
+        <span class="step-number">4a</span>
+        <span class="step-text">✅ 참: "합격" 출력</span>
+      </div>
+      <div class="step branch-false" data-step="4">
+        <span class="step-number">4b</span>
+        <span class="step-text">❌ 거짓: "불합격" 출력</span>
+      </div>
+      <div class="step" data-step="5">
+        <span class="step-number">5</span>
+        <span class="step-text">결과: <span id="grade-output">?</span></span>
+      </div>
+      <div class="step" data-step="6">
+        <span class="step-number">6</span>
+        <span class="step-text">종료</span>
+      </div>
+    </div>
+    
+    <div class="variables">
+      <h4>변수 상태</h4>
+      <div class="var-display">
+        <span>점수: <span id="var-score">-</span></span>
+        <span>결과: <span id="var-result">-</span></span>
+      </div>
+    </div>
+  </section>
+
+  <details>
+    <summary>예시 코드 보기</summary>
+    <pre><code>START
+점수 입력
+IF 점수 >= 60 THEN
+  "합격" 출력
+ELSE
+  "불합격" 출력
+ENDIF
+END</code></pre>
+  </details>
+
+  <section class="quiz">
+    <h3>확인 문제</h3>
+    <p>다음 중 선택 구조를 사용해야 하는 상황은?</p>
+    <button aria-label="1번 선택" data-answer="A">1. 1부터 10까지 숫자 출력하기</button>
+    <button aria-label="2번 선택" data-answer="B">2. 온도가 0도 미만이면 외출 시 코트 착용하기</button>
+    <button aria-label="3번 선택" data-answer="C">3. 두 수의 합 계산하기</button>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+
+  <script src="../js/quiz.js"></script>
+  <script src="../js/visualization.js"></script>
+  <script src="../js/selection.js"></script>
+</body>
+</html>

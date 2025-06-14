@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="200" viewBox="0 0 180 200">
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#0076ff" />
+    </marker>
+  </defs>
+  <rect x="50" y="25" width="80" height="30" rx="6" fill="#e3f0ff" stroke="#0076ff" stroke-width="2"/>
+  <rect x="50" y="85" width="80" height="30" rx="6" fill="#e3f0ff" stroke="#0076ff" stroke-width="2"/>
+  <rect x="50" y="145" width="80" height="30" rx="6" fill="#e3f0ff" stroke="#0076ff" stroke-width="2"/>
+  <text x="90" y="45" text-anchor="middle" font-size="13" fill="#0076ff" font-weight="bold">시작</text>
+  <text x="90" y="105" text-anchor="middle" font-size="13" fill="#0076ff" font-weight="bold">처리</text>
+  <text x="90" y="165" text-anchor="middle" font-size="13" fill="#0076ff" font-weight="bold">종료</text>
+  <path d="M90 55 L90 80" stroke="#0076ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M90 115 L90 140" stroke="#0076ff" stroke-width="2" marker-end="url(#arrow)"/>
+</svg> 

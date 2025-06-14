@@ -1,0 +1,38 @@
+/* QnA 전용 스타일 */
+.padlet-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.padlet-container {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.padlet-info {
+  background: #e9ecef;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.padlet-info h4 {
+  margin-bottom: 1rem;
+  color: #2d5a27;
+}
+
+.padlet-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.padlet-info li {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+} 

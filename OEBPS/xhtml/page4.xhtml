@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>프로그램의 논리 – 변수와 제어 구조</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul class="main-menu">
+      <li class="dropdown">
+        <a href="page1.xhtml">학습 시작하기</a>
+        <ul class="dropdown-list">
+          <li><a href="index.xhtml">표지 돌아가기</a></li>
+          <li><a href="../nav.xhtml">목차 보기</a></li>
+          <li><a href="page1.xhtml">문제 해결의 첫걸음</a></li>
+          <li><a href="page2.xhtml">알고리즘 설계</a></li>
+          <li><a href="page3.xhtml">프로그래밍 기초</a></li>
+          <li><a href="page4.xhtml">변수와 제어 구조</a></li>
+          <li><a href="page5.xhtml">실생활 적용</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="sequential.xhtml">실습하기</a>
+        <ul class="dropdown-list">
+          <li><a href="sequential.xhtml">순차 구조</a></li>
+          <li><a href="repetition.xhtml">반복 구조</a></li>
+          <li><a href="selection.xhtml">선택 구조</a></li>
+          <li><a href="qna.xhtml">질문과 답변</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="programing.xhtml">Flip-Audio Book</a>
+        <ul class="dropdown-list">
+          <li><a href="programing.xhtml">프로그래밍 과정<br/>알아보기</a></li>
+          <li><a href="appendix.xhtml">부록 보기</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+<div class="section-title-center">
+  <h2 class="title-with-icon page4-title"><img src="../images/apple.svg" alt="사과 아이콘" style="vertical-align:middle;margin-right:0.02em;width:1.6em;height:1.6em;border:none;outline:none;"/>변수와 제어 구조</h2>
+</div>
+<p>프로그램은 단순히 명령어를 나열하는 것을 넘어, 자료를 효율적으로 관리하고 논리적인 흐름을 제어하기 위한 중요한 개념들을 사용합니다.</p>
+<img src="../images/variables_control.svg" alt="변수와 제어 구조" class="illustration" />
+<ul>
+  <li><b>변수(Variable)</b><div class="subtitle-gap"></div>
+    프로그램에서 필요한 자료를 기억하고 저장하기 위한 임시 저장 장소입니다. 변수에 저장된 값을 쉽게 유추할 수 있도록 변수명을 붙이며, 계산 결과가 틀리지 않도록 초깃값을 지정하는 것이 중요합니다.
+    <ul>
+      <li>예를 들어, 두 수의 합을 계산하는 프로그램에서 '첫 번째 수', '두 번째 수', '결과'를 저장하는 공간이 바로 변수입니다.</li>
+    </ul>
+  </li>
+  <li><b>연산자</b><div class="subtitle-gap"></div>
+    프로그램 내에서 값을 계산하거나 비교하고 논리적인 판단을 할 때 사용합니다.
+    <ul>
+      <li>산술 연산: 덧셈, 뺄셈, 곱셈, 나눗셈 등 수학적 연산을 수행합니다.</li>
+      <li>비교 연산: 두 값의 크기나 같음을 비교하여 참(True) 또는 거짓(False)을 판별합니다.</li>
+      <li>논리 연산: 조건의 참과 거짓을 판별하는 데 사용하며, '그리고(AND)', '또는(OR)', '~이(가) 아니다(NOT)' 등이 있습니다.</li>
+    </ul>
+  </li>
+  <li><b>제어 구조(Control Structure)</b><div class="subtitle-gap"></div>
+    프로그램의 실행 순서를 조절하는 구조를 말하며, 프로그램을 효율적으로 작성하기 위해 사용됩니다. 주요 제어 구조는 다음과 같습니다.
+    <ul>
+      <li>순차 구조(Sequential Structure): 정해진 순서대로 작업을 차례로 실행하는 가장 기본적인 구조입니다. 하나의 작업이 끝나면 다음 작업을 순차적으로 실행합니다.<br/><a href="sequential.xhtml" class="main-link" style="margin-top: 0.5rem; display: inline-block;">🔗 순차 구조 테스트하기</a></li>
+      <li>반복 구조(Repetitive Structure): 정해진 횟수만큼 동일한 작업을 반복하여 실행하거나 주어진 조건을 만족할 때까지 작업을 반복적으로 실행하는 구조입니다. 같은 작업을 여러 번 실행해야 할 때 프로그램을 간결하게 작성할 수 있도록 돕습니다.
+        <ul>
+          <li>종류: [계속 반복하기], [횟수 반복하기], [조건 반복하기] 등이 있습니다.</li>
+        </ul>
+        <a href="repetition.xhtml" class="main-link" style="margin-top: 0.5rem; display: inline-block;">🔗 반복 구조 테스트하기</a>
+      </li>
+      <li>선택 구조(Conditional Structure): 주어진 조건의 만족 여부에 따라 처리하는 내용이나 순서가 달라지는 구조입니다. 조건이 참(True)이면 특정 부분을 실행하고, 거짓(False)이면 다른 부분을 실행합니다.
+        <ul>
+          <li>종류: [만약 ~ 이라면 실행하기], [만약 ~ 이라면 실행하기 아니면 ~ 실행하기] 등이 주로 사용됩니다. 이러한 순차, 반복, 선택 구조를 조합하여 알고리즘을 설계하고 프로그램을 작성합니다.</li>
+        </ul>
+        <a href="selection.xhtml" class="main-link" style="margin-top: 0.5rem; display: inline-block;">🔗 선택 구조 테스트하기</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html> 

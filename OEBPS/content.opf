@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="BookID">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title>EPUB 문제 해결과 프로그래밍</dc:title>
+    <dc:language>ko</dc:language>
+    <dc:identifier id="BookID">urn:uuid:12345678-1234-1234-1234-123456789012</dc:identifier>
+    <dc:creator>v0.dev</dc:creator>
+    <meta property="dcterms:modified">2025-06-09T09:00:00Z</meta>
+    <meta name="version" content="1.0"/>
+    <meta name="editor" content="AI 개발팀"/>
+    <meta name="update" content="파일명 영문화, manifest/spine 최신화, 구조별 스타일 분리(styles/), 오디오/이미지 포함, 패들릿 QnA"/>
+  </metadata>
+  <manifest>
+    <!-- Navigation -->
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+    <!-- XHTML Content -->
+    <item id="index" href="xhtml/index.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page1" href="xhtml/page1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page2" href="xhtml/page2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page3" href="xhtml/page3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page4" href="xhtml/page4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page5" href="xhtml/page5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sequential" href="xhtml/sequential.xhtml" media-type="application/xhtml+xml"/>
+    <item id="repetition" href="xhtml/repetition.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selection" href="xhtml/selection.xhtml" media-type="application/xhtml+xml"/>
+    <item id="programing" href="xhtml/programing.xhtml" media-type="application/xhtml+xml"/>
+    <item id="qna" href="xhtml/qna.xhtml" media-type="application/xhtml+xml"/>
+    <item id="appendix" href="xhtml/appendix.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- CSS -->
+    <item id="style" href="css/style.css" media-type="text/css"/>
+    <item id="index-css" href="css/index.css" media-type="text/css"/>
+    <item id="qna-css" href="css/qna.css" media-type="text/css"/>
+    <item id="selection-css" href="styles/selection.css" media-type="text/css"/>
+    <item id="repetition-css" href="styles/repetition.css" media-type="text/css"/>
+
+    <!-- JavaScript -->
+    <item id="quiz-js" href="js/quiz.js" media-type="application/javascript"/>
+    <item id="visualization-js" href="js/visualization.js" media-type="application/javascript"/>
+    <item id="selection-js" href="js/selection.js" media-type="application/javascript"/>
+    <item id="sequential-js" href="js/sequential.js" media-type="application/javascript"/>
+    <item id="repetition-js" href="js/repetition.js" media-type="application/javascript"/>
+
+    <!-- Images -->
+    <item id="programming-basics" href="images/programming_basics.svg" media-type="image/svg+xml"/>
+    <item id="algorithm-design" href="images/algorithm_design.svg" media-type="image/svg+xml"/>
+    <item id="flowchart-rep" href="images/flowchart_rep.svg" media-type="image/svg+xml"/>
+    <item id="flowchart-seq" href="images/flowchart_seq.svg" media-type="image/svg+xml"/>
+    <item id="flowchart-sel" href="images/flowchart_sel.svg" media-type="image/svg+xml"/>
+    <item id="variables-control" href="images/variables_control.svg" media-type="image/svg+xml"/>
+    <item id="real-world-applications" href="images/real_world_applications.svg" media-type="image/svg+xml"/>
+    <item id="problem-solving" href="images/problem_solving.svg" media-type="image/svg+xml"/>
+    <item id="apple" href="images/apple.svg" media-type="image/svg+xml"/>
+    <item id="flow-rep" href="images/flow_rep.svg" media-type="image/svg+xml"/>
+    <item id="flow-sel" href="images/flow_sel.svg" media-type="image/svg+xml"/>
+    <item id="flow-seq" href="images/flow_seq.svg" media-type="image/svg+xml"/>
+
+    <!-- Audio -->
+    <item id="audio-book" href="audio/algobook.mp3" media-type="audio/mpeg"/>
+  </manifest>
+  <spine>
+    <itemref idref="nav"/>
+    <itemref idref="index"/>
+    <itemref idref="page1"/>
+    <itemref idref="page2"/>
+    <itemref idref="page3"/>
+    <itemref idref="page4"/>
+    <itemref idref="page5"/>
+    <itemref idref="sequential"/>
+    <itemref idref="repetition"/>
+    <itemref idref="selection"/>
+    <itemref idref="programing"/>
+    <itemref idref="qna"/>
+    <itemref idref="appendix"/>
+  </spine>
+</package>

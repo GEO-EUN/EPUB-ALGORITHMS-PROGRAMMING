@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <!-- Background -->
+  <rect width="400" height="500" fill="#f8f9fa"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L5,2 z" fill="#2c3e50"/>
+    </marker>
+    <marker id="red-arrow" markerWidth="6" markerHeight="6" refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L5,2 z" fill="#e74c3c"/>
+    </marker>
+    <marker id="green-arrow" markerWidth="6" markerHeight="6" refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L5,2 z" fill="#27ae60"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-size="18" fill="#2c3e50" font-weight="bold">알고리즘 설계 과정</text>
+  
+  <!-- 시작 -->
+  <ellipse cx="200" cy="55" rx="35" ry="15" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  <text x="200" y="60" text-anchor="middle" font-size="12" fill="white" font-weight="bold">시작</text>
+  
+  <!-- Arrow down (touching next box) -->
+  <path d="M200 70 L200 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 1: 문제 분석 -->
+  <rect x="150" y="105" width="100" height="35" rx="5" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="200" y="120" text-anchor="middle" font-size="11" fill="white" font-weight="bold">1단계: 문제 분석</text>
+  <text x="200" y="132" text-anchor="middle" font-size="10" fill="white">요구사항 파악</text>
+  
+  <!-- Arrow down (touching next box) -->
+  <path d="M200 140 L200 175" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: 입출력 정의 -->
+  <rect x="150" y="175" width="100" height="35" rx="5" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+  <text x="200" y="190" text-anchor="middle" font-size="11" fill="white" font-weight="bold">2단계: 입출력 정의</text>
+  <text x="200" y="202" text-anchor="middle" font-size="10" fill="white">데이터 명시</text>
+  
+  <!-- Arrow down (touching next box) -->
+  <path d="M200 210 L200 245" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: 알고리즘 설계 -->
+  <rect x="150" y="245" width="100" height="35" rx="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" font-size="11" fill="white" font-weight="bold">3단계: 알고리즘 설계</text>
+  <text x="200" y="272" text-anchor="middle" font-size="10" fill="white">해결 방법 구상</text>
+  
+  <!-- Arrow right (touching next box) -->
+  <path d="M250 262 L295 262" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: 순서도 작성 -->
+  <rect x="295" y="245" width="100" height="35" rx="5" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="345" y="260" text-anchor="middle" font-size="11" fill="white" font-weight="bold">4단계: 순서도 작성</text>
+  <text x="345" y="272" text-anchor="middle" font-size="10" fill="white">시각적 표현</text>
+  
+  <!-- Arrow down (touching next box) -->
+  <path d="M345 280 L345 315" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: 검증 및 테스트 -->
+  <rect x="295" y="315" width="100" height="35" rx="5" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+  <text x="345" y="330" text-anchor="middle" font-size="11" fill="white" font-weight="bold">5단계: 검증 테스트</text>
+  <text x="345" y="342" text-anchor="middle" font-size="10" fill="white">오류 확인</text>
+  
+  <!-- Arrow left (touching next box) -->
+  <path d="M295 332 L250 332" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 6: 최적화 -->
+  <rect x="150" y="315" width="100" height="35" rx="5" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  <text x="200" y="330" text-anchor="middle" font-size="11" fill="white" font-weight="bold">6단계: 최적화</text>
+  <text x="200" y="342" text-anchor="middle" font-size="10" fill="white">성능 개선</text>
+  
+  <!-- Arrow down (touching next box) -->
+  <path d="M200 350 L200 385" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Decision Diamond: 완료 검사 -->
+  <polygon points="200,385 230,405 200,425 170,405" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="200" y="402" text-anchor="middle" font-size="11" fill="white" font-weight="bold">완료</text>
+  <text x="200" y="413" text-anchor="middle" font-size="11" fill="white" font-weight="bold">검사</text>
+  
+  <!-- NO PATH - 아니오 (touching target box) -->
+  <path d="M145 415 Q60 480 145 262" stroke="#e74c3c" stroke-width="3" fill="none" marker-end="url(#red-arrow)"/>
+  <rect x="140" y="395" width="30" height="20" rx="3" fill="#e74c3c"/>
+  <text x="155" y="408" text-anchor="middle" font-size="10" fill="white" font-weight="bold">아니오</text>
+  
+  <!-- YES PATH - 예 (touching final result) -->
+  <path d="M200 425 L200 450" stroke="#27ae60" stroke-width="3" marker-end="url(#green-arrow)"/>
+  <rect x="210" y="415" width="20" height="20" rx="3" fill="#27ae60"/>
+  <text x="220" y="428" text-anchor="middle" font-size="10" fill="white" font-weight="bold">예</text>
+  
+  <!-- Final result -->
+  <ellipse cx="200" cy="470" rx="50" ry="20" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+  <text x="200" y="467" text-anchor="middle" font-size="12" fill="white" font-weight="bold">🎉 알고리즘</text>
+  <text x="200" y="479" text-anchor="middle" font-size="12" fill="white" font-weight="bold">완성!</text>
+  
+  <!-- 설명 패널 -->
+  <rect x="20" y="40" width="105" height="220" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="72" y="60" text-anchor="middle" font-size="14" fill="#2c3e50" font-weight="bold">단계별 설명</text>
+  
+  <!-- 단계별 설명 -->
+  <circle cx="35" cy="80" r="4" fill="#e74c3c"/>
+  <text x="45" y="85" font-size="10" fill="#2c3e50" font-weight="bold">문제 분석</text>
+  <text x="30" y="97" font-size="9" fill="#7f8c8d">• 문제 이해</text>
+  <circle cx="35" cy="125" r="4" fill="#f39c12"/>
+  <text x="45" y="130" font-size="10" fill="#2c3e50" font-weight="bold">입출력 정의</text>
+  <text x="30" y="142" font-size="9" fill="#7f8c8d">• 입력 데이터</text>
+  <circle cx="35" cy="170" r="4" fill="#3498db"/>
+  <text x="45" y="175" font-size="10" fill="#2c3e50" font-weight="bold">알고리즘 설계</text>
+  <text x="30" y="187" font-size="9" fill="#7f8c8d">• 해결 절차</text>
+  <circle cx="35" cy="215" r="4" fill="#9b59b6"/>
+  <text x="45" y="220" font-size="10" fill="#2c3e50" font-weight="bold">순서도 작성</text>
+  <text x="30" y="232" font-size="9" fill="#7f8c8d">• 시각화</text>
+</svg> 

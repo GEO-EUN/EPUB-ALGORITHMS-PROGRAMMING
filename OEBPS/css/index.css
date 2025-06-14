@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+  font-family: "Noto Sans KR", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.main-content {
+  background: white;
+  border-radius: 30px;
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+.unit-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.unit-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.learning-objectives {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.objectives-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.objectives-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.objectives-list li {
+  margin: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #444;
+}
+
+.objectives-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2d5a27;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.progress-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.progress-item {
+  flex: 1;
+  background: #e8f5e8;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-item:hover {
+  background: #d4edda;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-item:hover .progress-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.progress-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d5a27;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  background: #2d5a27;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background: #1e3d1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.quiz-section {
+  background: #fff3cd;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.quiz-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #856404;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.quiz-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-options li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+nav[epub|type="toc"] ul,
+nav[epub|type="toc"] ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+nav[epub|type="toc"] li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+nav[epub|type="toc"] ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 2rem;
+  max-width: 500px;
+}
+
+nav[epub|type="toc"] ol > li {
+  padding-left: 0;
+}
+
+nav[epub|type="toc"] h1 {
+  margin-left: 2rem;
+}
+
+nav[epub|type="toc"] a,
+nav[epub|type="toc"] ul a {
+  text-decoration: none;
+} 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="selGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#51cf66;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Decision diamond -->
+  <path d="M24 6 L36 18 L24 30 L12 18 Z" fill="url(#selGrad)" stroke="#1e7e34" stroke-width="2"/>
+  
+  <!-- Branch boxes -->
+  <rect x="6" y="36" width="12" height="6" rx="1" fill="url(#selGrad)" stroke="#1e7e34" stroke-width="1"/>
+  <rect x="30" y="36" width="12" height="6" rx="1" fill="url(#selGrad)" stroke="#1e7e34" stroke-width="1"/>
+  
+  <!-- Arrows -->
+  <path d="M18 24 L12 30 M9 27 L12 30 L15 27" stroke="#1e7e34" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M30 24 L36 30 M33 27 L36 30 L39 27" stroke="#1e7e34" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Labels -->
+  <text x="24" y="20" text-anchor="middle" fill="white" font-family="Arial" font-size="6" font-weight="bold">조건</text>
+  <text x="12" y="40" text-anchor="middle" fill="white" font-family="Arial" font-size="5" font-weight="bold">참</text>
+  <text x="36" y="40" text-anchor="middle" fill="white" font-family="Arial" font-size="5" font-weight="bold">거짓</text>
+</svg> 

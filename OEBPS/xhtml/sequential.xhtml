@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>순차 구조</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../../styles/sequential.css"/>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul class="main-menu">
+      <li class="dropdown">
+        <a href="page1.xhtml">학습 시작하기</a>
+        <ul class="dropdown-list">
+          <li><a href="index.xhtml">표지 돌아가기</a></li>
+          <li><a href="../nav.xhtml">목차 보기</a></li>
+          <li><a href="page1.xhtml">문제 해결의 첫걸음</a></li>
+          <li><a href="page2.xhtml">알고리즘 설계</a></li>
+          <li><a href="page3.xhtml">프로그래밍 기초</a></li>
+          <li><a href="page4.xhtml">변수와 제어 구조</a></li>
+          <li><a href="page5.xhtml">실생활 적용</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="sequential.xhtml">실습하기</a>
+        <ul class="dropdown-list">
+          <li><a href="sequential.xhtml">순차 구조</a></li>
+          <li><a href="repetition.xhtml">반복 구조</a></li>
+          <li><a href="selection.xhtml">선택 구조</a></li>
+          <li><a href="qna.xhtml">질문과 답변</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="programing.xhtml">Flip-Audio Book</a>
+        <ul class="dropdown-list">
+          <li><a href="programing.xhtml">프로그래밍 과정<br/>알아보기</a></li>
+          <li><a href="appendix.xhtml">부록 보기</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="section-title-center">
+    <h2 class="title-with-icon">
+      <img src="../images/flow_seq.svg" alt="순차 구조 아이콘" />
+      순차 구조
+    </h2>
+  </div>
+  <p>순차 구조는 명령어가 순서대로 하나씩 실행되는 가장 기본적인 제어 구조입니다. 위에서 아래로, 왼쪽에서 오른쪽으로 순서대로 실행되며, 각 명령어는 한 번만 실행됩니다.</p>
+  <div style="text-align:center; margin: 2rem 0;">
+    <img src="../images/flowchart_seq.svg" alt="순차 구조 플로우차트" style="max-width:240px;width:100%;height:auto;" />
+  </div>
+
+  <section class="input-section">
+    <h3>🎯 직접 입력해보기</h3>
+    <div class="input-tips">
+      <h5>💡 학습 팁</h5>
+      <ul>
+        <li>다양한 숫자 조합을 시도해 보세요</li>
+        <li>음수와 양수를 모두 테스트해 보세요</li>
+        <li>알고리즘 실행 시뮬레이션에서 단계별로 확인해 보세요</li>
+      </ul>
+    </div>
+
+    <div class="custom-input">
+      <div class="input-group">
+        <label for="custom-a">첫 번째 수:</label>
+        <input type="number" id="custom-a" value="10" />
+        <label for="custom-b">두 번째 수:</label>
+        <input type="number" id="custom-b" value="5" />
+        <button class="run-custom" id="seq-run-custom">🚀 실행하기</button>
+      </div>
+      <div id="seq-validation-error" class="validation-error"></div>
+    </div>
+
+    <div class="test-cases">
+      <h4>📋 미리 준비된 테스트 케이스</h4>
+      <div class="test-case" data-inputs="10,5">
+        <div class="test-case-info">기본 케이스: 10과 5</div>
+        <div class="test-case-result">결과: 15</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="-3,7">
+        <div class="test-case-info">음수 포함: -3과 7</div>
+        <div class="test-case-result">결과: 4</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="0,0">
+        <div class="test-case-info">0 테스트: 0과 0</div>
+        <div class="test-case-result">결과: 0</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="100,-50">
+        <div class="test-case-info">큰 수: 100과 -50</div>
+        <div class="test-case-result">결과: 50</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="7,3">
+        <div class="test-case-info">작은 수: 7과 3</div>
+        <div class="test-case-result">결과: 10</div>
+        <button>사용하기</button>
+      </div>
+    </div>
+
+    <div class="results-comparison">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h4>📊 실행 결과 비교</h4>
+        <button class="clear-results" id="seq-clear-results">결과 지우기</button>
+      </div>
+      <div id="seq-results"></div>
+    </div>
+  </section>
+
+  <section class="visualization">
+    <h3>알고리즘 실행 시뮬레이션</h3>
+    <div class="sim-controls">
+      <button id="seq-play" aria-label="실행">▶️ 실행</button>
+      <button id="seq-pause" aria-label="일시정지">⏸️ 일시정지</button>
+      <button id="seq-reset" aria-label="리셋">🔄 리셋</button>
+    </div>
+    
+    <div class="algorithm-steps">
+      <div class="step" data-step="0">
+        <span class="step-number">1</span>
+        <span class="step-text">시작</span>
+      </div>
+      <div class="step" data-step="1">
+        <span class="step-number">2</span>
+        <span class="step-text">첫 번째 수 입력: <input type="number" id="input-a" value="10" /></span>
+      </div>
+      <div class="step" data-step="2">
+        <span class="step-number">3</span>
+        <span class="step-text">두 번째 수 입력: <input type="number" id="input-b" value="5" /></span>
+      </div>
+      <div class="step" data-step="3">
+        <span class="step-number">4</span>
+        <span class="step-text">합계 = 첫 번째 수 + 두 번째 수 <span id="result">?</span></span>
+      </div>
+      <div class="step" data-step="4">
+        <span class="step-number">5</span>
+        <span class="step-text">합계 출력: <span id="output">?</span></span>
+      </div>
+      <div class="step" data-step="5">
+        <span class="step-number">6</span>
+        <span class="step-text">종료</span>
+      </div>
+    </div>
+    
+    <div class="variables">
+      <h4>변수 상태</h4>
+      <div class="var-display">
+        <span>첫 번째 수: <span id="var-a">-</span></span>
+        <span>두 번째 수: <span id="var-b">-</span></span>
+        <span>합계: <span id="var-sum">-</span></span>
+      </div>
+    </div>
+  </section>
+
+  <details>
+    <summary>예시 코드 보기</summary>
+    <pre><code>START
+첫 번째 수 입력
+두 번째 수 입력
+합계 = 첫 번째 수 + 두 번째 수
+합계 출력
+END</code></pre>
+  </details>
+
+  <section class="quiz">
+    <h3>확인 문제</h3>
+    <p>다음 중 순차 구조의 특징이 아닌 것은?</p>
+    <button aria-label="1번 선택" data-answer="A">1. 명령어가 순서대로 실행됨</button>
+    <button aria-label="2번 선택" data-answer="B">2. 각 명령어는 한 번만 실행됨</button>
+    <button aria-label="3번 선택" data-answer="C">3. 조건에 따라 다른 경로로 실행됨</button>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+
+  <script src="../js/quiz.js"></script>
+  <script src="../js/visualization.js"></script>
+  <script src="../js/sequential.js"></script>
+</body>
+</html>

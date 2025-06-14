@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>반복 구조</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../../styles/repetition.css"/>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul class="main-menu">
+      <li class="dropdown">
+        <a href="page1.xhtml">학습 시작하기</a>
+        <ul class="dropdown-list">
+          <li><a href="index.xhtml">표지 돌아가기</a></li>
+          <li><a href="../nav.xhtml">목차 보기</a></li>
+          <li><a href="page1.xhtml">문제 해결의 첫걸음</a></li>
+          <li><a href="page2.xhtml">알고리즘 설계</a></li>
+          <li><a href="page3.xhtml">프로그래밍 기초</a></li>
+          <li><a href="page4.xhtml">변수와 제어 구조</a></li>
+          <li><a href="page5.xhtml">실생활 적용</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="sequential.xhtml">실습하기</a>
+        <ul class="dropdown-list">
+          <li><a href="sequential.xhtml">순차 구조</a></li>
+          <li><a href="repetition.xhtml">반복 구조</a></li>
+          <li><a href="selection.xhtml">선택 구조</a></li>
+          <li><a href="qna.xhtml">질문과 답변</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="programing.xhtml">Flip-Audio Book</a>
+        <ul class="dropdown-list">
+          <li><a href="programing.xhtml">프로그래밍 과정<br/>알아보기</a></li>
+          <li><a href="appendix.xhtml">부록 보기</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="section-title-center">
+    <h2 class="title-with-icon">
+      <img src="../images/flow_rep.svg" alt="반복 구조 아이콘" />
+      반복 구조
+    </h2>
+  </div>
+  <p>반복 구조는 특정 조건이 참인 동안 명령어 블록을 반복해서 실행하는 제어 구조입니다. 주로 for, while, do-while 문 등으로 구현되며, 조건이 거짓이 되면 반복이 종료됩니다.</p>
+  <div style="text-align:center; margin: 2rem 0;">
+    <img src="../images/flowchart_rep.svg" alt="반복 구조 플로우차트" style="max-width:280px;width:100%;height:auto;" />
+  </div>
+
+  <section class="input-section">
+    <h3>🎯 직접 입력해보기</h3>
+    <div class="input-tips">
+      <h5>💡 학습 팁</h5>
+      <ul>
+        <li>다양한 범위와 연산을 시도하여 반복 구조를 이해해 보세요</li>
+        <li>작은 범위부터 시작하여 점차 늘려보세요</li>
+        <li>다른 연산 방식으로 결과가 어떻게 달라지는지 확인해 보세요</li>
+        <li>알고리즘 실행 시뮬레이션에서 단계별로 확인해 보세요</li>  
+      </ul>
+    </div>
+
+    <div class="custom-input">
+      <div class="input-group">
+        <label for="custom-start">시작:</label>
+        <input type="number" id="custom-start" value="1" min="1" max="50" />
+        <label for="custom-end">끝:</label>
+        <input type="number" id="custom-end" value="10" min="1" max="50" />
+        <label for="custom-operation">연산:</label>
+        <select id="custom-operation">
+          <option value="sum">합계 (더하기)</option>
+          <option value="product">곱셈</option>
+          <option value="even">짝수만 합계</option>
+        </select>
+        <button class="run-custom" id="rep-run-custom">🚀 실행하기</button>
+      </div>
+      <div id="rep-validation-error" class="validation-error"></div>
+    </div>
+
+    <div class="test-cases">
+      <h4>📋 미리 준비된 테스트 케이스</h4>
+      <div class="test-case" data-inputs="1,5,sum">
+        <div class="test-case-info">기본 합계: 1~5 더하기</div>
+        <div class="test-case-result">결과: 15</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="1,4,product">
+        <div class="test-case-info">팩토리얼: 1~4 곱하기</div>
+        <div class="test-case-result">결과: 24</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="1,10,even">
+        <div class="test-case-info">짝수 합: 1~10 중 짝수만</div>
+        <div class="test-case-result">결과: 30</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="5,8,sum">
+        <div class="test-case-info">부분 합계: 5~8 더하기</div>
+        <div class="test-case-result">결과: 26</div>
+        <button>사용하기</button>
+      </div>
+      <div class="test-case" data-inputs="2,6,even">
+        <div class="test-case-info">짝수 합: 2~6 중 짝수만</div>
+        <div class="test-case-result">결과: 12</div>
+        <button>사용하기</button>
+      </div>
+    </div>
+
+    <div class="results-comparison">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h4>📊 실행 결과 비교</h4>
+        <button class="clear-results" id="rep-clear-results">결과 지우기</button>
+      </div>
+      <div id="rep-results"></div>
+    </div>
+  </section>
+
+  <section class="visualization">
+    <h3>알고리즘 실행 시뮬레이션</h3>
+    <div class="sim-controls">
+      <button id="rep-play" aria-label="실행">▶️ 실행</button>
+      <button id="rep-pause" aria-label="일시정지">⏸️ 일시정지</button>
+      <button id="rep-reset" aria-label="리셋">🔄 리셋</button>
+    </div>
+
+    <div class="algorithm-steps">
+      <div class="step" data-step="0">
+        <span class="step-number">1</span>
+        <span class="step-text">시작</span>
+      </div>
+      <div class="step" data-step="1">
+        <span class="step-number">2</span>
+        <span class="step-text">합계 = 0으로 초기화</span>
+      </div>
+      <div class="step" data-step="2">
+        <span class="step-number">3</span>
+        <span class="step-text">i = 1로 초기화</span>
+      </div>
+      <div class="step loop-condition" data-step="3">
+        <span class="step-number">4</span>
+        <span class="step-text">i &lt;= <input type="number" id="input-limit" value="5" min="1" max="10" /> 인가? <span id="loop-check">?</span></span>
+      </div>
+      <div class="step loop-body" data-step="4">
+        <span class="step-number">5</span>
+        <span class="step-text">합계 = 합계 + i</span>
+      </div>
+      <div class="step loop-increment" data-step="5">
+        <span class="step-number">6</span>
+        <span class="step-text">i = i + 1</span>
+      </div>
+      <div class="step" data-step="6">
+        <span class="step-number">7</span>
+        <span class="step-text">최종 합계 출력: <span id="final-sum">?</span></span>
+      </div>
+      <div class="step" data-step="7">
+        <span class="step-number">8</span>
+        <span class="step-text">종료</span>
+      </div>
+    </div>
+
+    <div class="variables">
+      <h4>변수 상태</h4>
+      <div class="var-display">
+        <span>i: <span id="var-i">-</span></span>
+        <span>합계: <span id="var-total">-</span></span>
+        <span>반복 횟수: <span id="loop-count">-</span></span>
+      </div>
+    </div>
+
+    <div class="loop-history">
+      <h4>반복 과정</h4>
+      <div id="iteration-log"></div>
+    </div>
+  </section>
+
+  <details>
+    <summary>예시 코드 보기</summary>
+    <pre><code>START
+합계 ← 0
+FOR i = 1 TO 10
+  합계 ← 합계 + i
+ENDFOR
+출력 합계
+END</code></pre>
+  </details>
+
+  <section class="quiz">
+    <h3>확인 문제</h3>
+    <p>다음 중 반복 구조가 필요한 작업은?</p>
+    <button aria-label="1번 선택" data-answer="A">1. 사용자의 나이 확인하기</button>
+    <button aria-label="2번 선택" data-answer="B">2. 두 수 중 큰 수 찾기</button>
+    <button aria-label="3번 선택" data-answer="C">3. 1부터 100까지의 짝수 합 구하기</button>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+
+  <script src="../js/quiz.js"></script>
+  <script src="../js/visualization.js"></script>
+  <script src="../js/repetition.js"></script>
+</body>
+</html>

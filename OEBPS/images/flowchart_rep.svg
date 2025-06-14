@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#6f42c1" />
+    </marker>
+  </defs>
+  <!-- Condition diamond -->
+  <polygon points="140,35 180,75 140,115 100,75" fill="#f3e9ff" stroke="#6f42c1" stroke-width="2"/>
+  <text x="140" y="80" text-anchor="middle" font-size="13" fill="#6f42c1" font-weight="bold">조건</text>
+  <!-- Down arrow to 반복 (shortened to avoid overlap) -->
+  <path d="M140 115 L140 140" stroke="#6f42c1" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 반복 box -->
+  <rect x="100" y="145" width="80" height="30" rx="6" fill="#f3e9ff" stroke="#6f42c1" stroke-width="2"/>
+  <text x="140" y="165" text-anchor="middle" font-size="13" fill="#6f42c1" font-weight="bold">반복</text>
+  <!-- Loop back arrow (avoiding box overlap) -->
+  <path d="M100 160 Q60 160 60 75 Q60 35 135 35" stroke="#6f42c1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <!-- Exit arrow to 종료 (shortened to avoid overlap) -->
+  <path d="M180 75 L245 75" stroke="#6f42c1" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="250" y="60" width="35" height="30" rx="5" fill="#f3e9ff" stroke="#6f42c1" stroke-width="2"/>
+  <text x="267" y="80" text-anchor="middle" font-size="12" fill="#6f42c1" font-weight="bold">종료</text>
+</svg> 
