@@ -18,9 +18,10 @@
    - 알고리즘의 순차 구조, 반복 구조, 선택 구조를 인터랙티브 기능으로 시뮬레이션 구현
    - Q&A는 직접 구성한 [Padlet Q&A 보드](https://padlet.com/AI_InfoCom_Dev_Teacher/ai-xmju3laff0on2zqe)를 페이지 내에 포함
 
-5. **프로그래밍 실습 페이지에 오디오북, 플립북, [Scratch(mit.edu)](https://scratch.mit.edu/)에 직접 작성한 프로젝트(실습코드 실행영역)를 추가**
+5. **프로그래밍 실습 페이지에 오디오북, 플립북(https://heyzine.com), [Scratch(mit.edu)](https://scratch.mit.edu/)에 직접 작성한 프로젝트(실습코드 실행영역)를 추가**
    - 실습 페이지에서 오디오북, 플립북, Scratch 실습코드 실행영역을 통합 제공
-   
+   - 플립북 주소 https://heyzine.com/flip-book/03c73a56e2.html
+
 6. **7-Zip 설치 후 EPUB 실행 파일 생성**
    - 7-Zip을 설치하여 EPUB 표준에 맞게 mimetype 무압축, META-INF/OEBPS 압축 방식으로 전자책 패키징
    - Sigil 등 EPUB 리더에서 정상 실행 및 검증
